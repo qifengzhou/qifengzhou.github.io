@@ -123,7 +123,7 @@
 
 
 
-  <title>fanyir: a R tool translates text from German to English and produces a PDF | Qifeng Zhou</title>
+  <title>Tag: Jupyter Notebook | Qifeng Zhou</title>
   
 
 
@@ -142,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,188 +266,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>Jupyter Notebook<small>Tag</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qifeng Zhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Qifeng Zhou">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" itemprop="url">
+              
+                <span itemprop="name">Enable both Python 2 and Python 3 in Jupyter Notebook</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">fanyir: a R tool translates text from German to English and produces a PDF</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-07T17:37:06+01:00">2018-01-07</time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-04-01T17:52:09+02:00"
+              content="2018-04-01" >
+          04-01
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Projects/" itemprop="url" rel="index">
-                    <span itemprop="name">Projects</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>A German learner, myself. Often annoyed that I have always to look for in dictionary like Google Translator or Linguee for the words in German for their English meanings. Next time I have do that again if I don’t remember the meaning, and again until I keep it in my memory. </p>
-<p>I started to my note on a notebook manually, its slow and painful. I need to type the words in the translator and when it gets something, write it down on my notebook. Why not automate this?</p>
-<p>Google this for the possibilities in R. I found R package “translateR”, it can read words or text from a dataframe and append the translatedContent. Perfect for me!</p>
-<p>Uhmm.. Spend a night I realized its not working for me, I don’t see the translated contents at all. Tried all the methods, with very few irrelevent quesntions found on Stakoverflow. And opend a issue on the ‘translateR’ GitHub repository. Can’t wait, I decided to move on to other solutions. </p>
-<p>The ‘translate’ package popped up. The difference is ‘translate’ translates one cell at a time, and I need the whole column to be translated and appended, the function like in ‘translateR’.</p>
-<p>At least the ‘translate’ works for me. I wrote a function to have the same function as I wanted in ‘transalteR’, fanyir here we go. Give it a .xlsx file, it can translate and produce PDF. </p>
-<p>To use it by yourself, you can read the instructions at the repository at GitHub  <a href="https://github.com/qifengzhou/fanyir" target="_blank" rel="noopener">https://github.com/qifengzhou/fanyir</a></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/R/" rel="tag"># R</a>
-          
-            <a href="/tags/NLP/" rel="tag"># NLP</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" rel="prev" title="Enable both Python 2 and Python 3 in Jupyter Notebook">
-                Enable both Python 2 and Python 3 in Jupyter Notebook <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -455,20 +321,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -690,10 +542,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
-
-
 
   
 
@@ -711,18 +559,6 @@
       <script id="dsq-count-scr" src="https://qifengzhou.disqus.com/count.js" async></script>
     
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://qifengzhou.github.io/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/';
-          this.page.identifier = '2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/';
-          this.page.title = 'fanyir: a R tool translates text from German to English and produces a PDF';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://qifengzhou.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
     
 
   

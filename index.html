@@ -283,6 +283,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qifeng Zhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qifeng Zhou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" itemprop="url">Enable both Python 2 and Python 3 in Jupyter Notebook</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-01T17:52:09+02:00">2018-04-01</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-3/" itemprop="url" rel="index">
+                    <span itemprop="name">Python 3</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Creating the working environment on the machine can be painful. I am using Homebrew for python packages management, it works great. The cons are Homebrew takes over the PATH, the directory which the computer reads and writes docs. Through its possible to change the PATH but not that straightforward. </p>
+<p>Python 2 will not be maintained soon. The future is Python 3. But sometimes you will need to work in Python 2, as needed. Or the legacy codes were written in Python 2 and its too costly for you to move to Python 3. Meanwhile most of the packages went to Python 3 but some are still in Python 2. At the moment its nice to have both. </p>
+<p>I have both Python 2 and Python 3 installed. But when I call Jupyter Notebook only Python 2 can be launched. I tried few things untill I found this post on Stackoverflow <a href="https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook" target="_blank" rel="noopener">Using both Python 2.x and Python 3.x in IPython Notebook</a></p>
+<p>A person wanted use Python 2 and Python 3 in the notebook. I tried one of the answers by the user “lsh”</p>
+<blockquote>
+<p>If you?re running Jupyter on Python 3, you can set up a Python 2 kernel like this:</p>
+<p>python2 -m pip install ipykernel</p>
+<p>python2 -m ipykernel install –user<br><a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html" target="_blank" rel="noopener">http://ipython.readthedocs.io/en/stable/install/kernel_install.html</a></p>
+</blockquote>
+<p>I have Python 2 and what I wanted is Python 3, so I changed “python2” into “python3” in both commands and executed them in the terminal. When I launch Jupyter Notebook,  I can choose Python 2 or Python 3. </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -473,7 +635,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -484,7 +646,7 @@
                 
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -495,7 +657,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
