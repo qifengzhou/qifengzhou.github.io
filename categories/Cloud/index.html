@@ -123,7 +123,7 @@
 
 
 
-  <title>Enable both Python 2 and Python 3 in Jupyter Notebook | Qifeng Zhou</title>
+  <title>Category: Cloud | Qifeng Zhou</title>
   
 
 
@@ -142,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,195 +266,55 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block category">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>Cloud<small>Category</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qifeng Zhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Qifeng Zhou">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/04/20/Uploading big docs onto AWS/" itemprop="url">
+              
+                <span itemprop="name">Uploading big docs onto AWS</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">Enable both Python 2 and Python 3 in Jupyter Notebook</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-01T17:52:09+02:00">2018-04-01</time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-04-20T17:52:09+02:00"
+              content="2018-04-20" >
+          04-20
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python-3/" itemprop="url" rel="index">
-                    <span itemprop="name">Python 3</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>Creating the working environment on the machine can be painful. I am using Homebrew for python packages management, it works great. The cons are Homebrew takes over the PATH, the directory which the computer reads and writes docs. Through its possible to change the PATH but not that straightforward. </p>
-<p>Python 2 will not be maintained soon. The future is Python 3. But sometimes you will need to work in Python 2, as needed. Or the legacy codes were written in Python 2 and its too costly for you to move to Python 3. Meanwhile most of the packages went to Python 3 but some are still in Python 2. At the moment its nice to have both. </p>
-<p>I have both Python 2 and Python 3 installed. But when I call Jupyter Notebook only Python 2 can be launched. I tried few things untill I found this post on Stackoverflow <a href="https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook" target="_blank" rel="noopener">Using both Python 2.x and Python 3.x in IPython Notebook</a></p>
-<p>A person wanted use Python 2 and Python 3 in the notebook. I tried one of the answers by the user “lsh”</p>
-<blockquote>
-<p>If you?re running Jupyter on Python 3, you can set up a Python 2 kernel like this:</p>
-<p>python2 -m pip install ipykernel</p>
-<p>python2 -m ipykernel install –user<br><a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html" target="_blank" rel="noopener">http://ipython.readthedocs.io/en/stable/install/kernel_install.html</a></p>
-</blockquote>
-<p>I have Python 2 and what I wanted is Python 3, so I changed “python2” into “python3” in both commands and executed them in the terminal. When I launch Jupyter Notebook,  I can choose Python 2 or Python 3. </p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Python-3/" rel="tag"># Python 3</a>
-          
-            <a href="/tags/Jupyter-Notebook/" rel="tag"># Jupyter Notebook</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/" rel="next" title="fanyir: a R tool translates text from German to English and produces a PDF">
-                <i class="fa fa-chevron-left"></i> fanyir: a R tool translates text from German to English and produces a PDF
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/20/Uploading big docs onto AWS/" rel="prev" title="Uploading big docs onto AWS">
-                Uploading big docs onto AWS <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -462,20 +322,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -697,10 +543,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
-
-
 
   
 
@@ -718,18 +560,6 @@
       <script id="dsq-count-scr" src="https://qifengzhou.disqus.com/count.js" async></script>
     
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://qifengzhou.github.io/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/';
-          this.page.identifier = '2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/';
-          this.page.title = 'Enable both Python 2 and Python 3 in Jupyter Notebook';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://qifengzhou.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
     
 
   

@@ -77,14 +77,14 @@
 
 <meta name="description" content="My thought and stuff">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://qifengzhou.github.io/tags/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://qifengzhou.github.io/categories/index.html">
 <meta property="og:site_name" content="Qifeng Zhou">
 <meta property="og:description" content="My thought and stuff">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-06T13:14:34.000Z">
+<meta property="og:updated_time" content="2018-01-06T13:14:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="My thought and stuff">
 
 
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://qifengzhou.github.io/tags/"/>
+  <link rel="canonical" href="http://qifengzhou.github.io/categories/"/>
 
 
 
@@ -267,6 +267,162 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/20/Uploading big docs onto AWS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qifeng Zhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qifeng Zhou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/20/Uploading big docs onto AWS/" itemprop="url">Uploading big docs onto AWS</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-20T17:52:09+02:00">2018-04-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Cloud/" itemprop="url" rel="index">
+                    <span itemprop="name">Cloud</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/20/Uploading big docs onto AWS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/20/Uploading big docs onto AWS/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>AWS has a limit for uploading for 25 MB, the same as GitHub. Machine learning tasks for computer vision will easily have bigger data sets than this. After researching on the web, I found this option is quite good. Using FileZilla will make life a lot easier. </p>
+<p>First you need to download and install FileZilla. Afterwards following the best answer on <a href="https://stackoverflow.com/questions/16744863/connect-to-amazon-ec2-file-directory-using-filezilla-and-sftp" target="_blank" rel="noopener">Connect to Amazon EC2 file directory using Filezilla and SFTP</a> on StackOverflow. For AWS EC2 instances you should choose ‘ubuntu’ as ‘user’ instead of ‘ec2-user’.  Then connect the SFTP site you set with the EC2 instance. When the connection is successful, brow the left side to the source and the right side to the target directory. You can easily pull the docs from the site just established to the EC2 instance. </p>
+<p>If you encounter with ‘permission deny’ warning message.<br>Following the answer on Stackoverflow <a href="https://stackoverflow.com/questions/10337951/amazon-ec2-ftp-write-permission" target="_blank" rel="noopener">Amazon Ec2 FTP Write Permission [closed]</a><br>In brief, it works like this:<br>Open up your terminal, execute ‘sudo -s’. This command give you right as root user.<br>Give write permission to all users by executing ‘chmod 777 /the path you want to write/‘<br>Now you can pull the files to EC2 instance.</p>
+<p>Have fun!</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -635,7 +791,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -646,7 +802,7 @@
                 
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -657,7 +813,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>

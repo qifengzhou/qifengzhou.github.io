@@ -123,7 +123,7 @@
 
 
 
-  <title>Enable both Python 2 and Python 3 in Jupyter Notebook | Qifeng Zhou</title>
+  <title>Uploading big docs onto AWS | Qifeng Zhou</title>
   
 
 
@@ -282,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/">
+    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/20/Uploading big docs onto AWS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Qifeng Zhou">
@@ -299,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Enable both Python 2 and Python 3 in Jupyter Notebook</h1>
+          <h1 class="post-title" itemprop="name headline">Uploading big docs onto AWS</h1>
         
 
         <div class="post-meta">
@@ -311,7 +311,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-01T17:52:09+02:00">2018-04-01</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-20T17:52:09+02:00">2018-04-20</time>
             
 
             
@@ -332,8 +332,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python-3/" itemprop="url" rel="index">
-                    <span itemprop="name">Python 3</span>
+                  <a href="/categories/Cloud/" itemprop="url" rel="index">
+                    <span itemprop="name">Cloud</span>
                   </a>
                 </span>
 
@@ -350,9 +350,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/#comments" itemprop="discussionUrl">
+                <a href="/2018/04/20/Uploading big docs onto AWS/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/04/20/Uploading big docs onto AWS/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -380,16 +380,10 @@
       
 
       
-        <p>Creating the working environment on the machine can be painful. I am using Homebrew for python packages management, it works great. The cons are Homebrew takes over the PATH, the directory which the computer reads and writes docs. Through its possible to change the PATH but not that straightforward. </p>
-<p>Python 2 will not be maintained soon. The future is Python 3. But sometimes you will need to work in Python 2, as needed. Or the legacy codes were written in Python 2 and its too costly for you to move to Python 3. Meanwhile most of the packages went to Python 3 but some are still in Python 2. At the moment its nice to have both. </p>
-<p>I have both Python 2 and Python 3 installed. But when I call Jupyter Notebook only Python 2 can be launched. I tried few things untill I found this post on Stackoverflow <a href="https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook" target="_blank" rel="noopener">Using both Python 2.x and Python 3.x in IPython Notebook</a></p>
-<p>A person wanted use Python 2 and Python 3 in the notebook. I tried one of the answers by the user “lsh”</p>
-<blockquote>
-<p>If you?re running Jupyter on Python 3, you can set up a Python 2 kernel like this:</p>
-<p>python2 -m pip install ipykernel</p>
-<p>python2 -m ipykernel install –user<br><a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html" target="_blank" rel="noopener">http://ipython.readthedocs.io/en/stable/install/kernel_install.html</a></p>
-</blockquote>
-<p>I have Python 2 and what I wanted is Python 3, so I changed “python2” into “python3” in both commands and executed them in the terminal. When I launch Jupyter Notebook,  I can choose Python 2 or Python 3. </p>
+        <p>AWS has a limit for uploading for 25 MB, the same as GitHub. Machine learning tasks for computer vision will easily have bigger data sets than this. After researching on the web, I found this option is quite good. Using FileZilla will make life a lot easier. </p>
+<p>First you need to download and install FileZilla. Afterwards following the best answer on <a href="https://stackoverflow.com/questions/16744863/connect-to-amazon-ec2-file-directory-using-filezilla-and-sftp" target="_blank" rel="noopener">Connect to Amazon EC2 file directory using Filezilla and SFTP</a> on StackOverflow. For AWS EC2 instances you should choose ‘ubuntu’ as ‘user’ instead of ‘ec2-user’.  Then connect the SFTP site you set with the EC2 instance. When the connection is successful, brow the left side to the source and the right side to the target directory. You can easily pull the docs from the site just established to the EC2 instance. </p>
+<p>If you encounter with ‘permission deny’ warning message.<br>Following the answer on Stackoverflow <a href="https://stackoverflow.com/questions/10337951/amazon-ec2-ftp-write-permission" target="_blank" rel="noopener">Amazon Ec2 FTP Write Permission [closed]</a><br>In brief, it works like this:<br>Open up your terminal, execute ‘sudo -s’. This command give you right as root user.<br>Give write permission to all users by executing ‘chmod 777 /the path you want to write/‘<br>Now you can pull the files to EC2 instance.</p>
+<p>Have fun!</p>
 
       
     </div>
@@ -407,9 +401,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python-3/" rel="tag"># Python 3</a>
-          
-            <a href="/tags/Jupyter-Notebook/" rel="tag"># Jupyter Notebook</a>
+            <a href="/tags/AWS/" rel="tag"># AWS</a>
           
         </div>
       
@@ -422,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/07/fanyir-a-R-tool-translates-text-from-German-to-English-and-produces-a-PDF/" rel="next" title="fanyir: a R tool translates text from German to English and produces a PDF">
-                <i class="fa fa-chevron-left"></i> fanyir: a R tool translates text from German to English and produces a PDF
+              <a href="/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/" rel="next" title="Enable both Python 2 and Python 3 in Jupyter Notebook">
+                <i class="fa fa-chevron-left"></i> Enable both Python 2 and Python 3 in Jupyter Notebook
               </a>
             
           </div>
@@ -431,10 +423,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/20/Uploading big docs onto AWS/" rel="prev" title="Uploading big docs onto AWS">
-                Uploading big docs onto AWS <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -721,9 +709,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://qifengzhou.github.io/2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/';
-          this.page.identifier = '2018/04/01/Enable both Python 2 and Python 3 in Jupyter Notebook/';
-          this.page.title = 'Enable both Python 2 and Python 3 in Jupyter Notebook';
+          this.page.url = 'http://qifengzhou.github.io/2018/04/20/Uploading big docs onto AWS/';
+          this.page.identifier = '2018/04/20/Uploading big docs onto AWS/';
+          this.page.title = 'Uploading big docs onto AWS';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://qifengzhou.disqus.com/embed.js';
