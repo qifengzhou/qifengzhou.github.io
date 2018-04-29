@@ -123,7 +123,7 @@
 
 
 
-  <title>categories | Qifeng Zhou</title>
+  <title>Upload files bigger than 25 MB to Github | Qifeng Zhou</title>
   
 
 
@@ -268,40 +268,223 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://qifengzhou.github.io/2018/04/29/Upload files bigger than 25 MB to Github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qifeng Zhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qifeng Zhou">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                4 categories in total
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Cloud/">Cloud</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python-3/">Python 3</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Upload files bigger than 25 MB to Github</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-29T17:52:09+02:00">2018-04-29</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/29/Upload files bigger than 25 MB to Github/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/29/Upload files bigger than 25 MB to Github/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>Github has a uploading limit for 25 MB. If you use the browser mode for uploading. </p>
+<p>One solution for this will be using <a href="https://git-lfs.github.com/" target="_blank" rel="noopener">Git LFS</a>.</p>
+<ol>
+<li><p>let’s install Git lfs:<br>I assume you have Homebrew installed. Open the terminal and execute.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git-lfs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set up Git LFS in Git, you only have to do it once.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git lfs install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Specify the file type you want to upload. If you want to upload a .mp4 file, as an example.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git lfs track &quot;*.mp4&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the file type to .gitattributes, so it will remember this file type, for next time uploading the same type of files you don’t have to do this step again.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .gitattributes</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Open the directory of the project in the terminal. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd the path of the directory</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Creat a new repository on Github. Do not add README or gitignore.</p>
+</li>
+<li><p>Initilize the directory as a Git reposity.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the file you want to upload from the directory.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add test.mp4</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Commit the files in the local repository.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;Upload video&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the URL of the remote repository, its at the top of the repository you set up at step 5.</p>
+</li>
+<li><p>Set the repository as origin.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin *remote repository URL*</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Confirm the origin.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>Push the changes in the local repository to Github.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>When you have a url error, normally its the wrong url as origin. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Show the current remotes</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+<p>Something showing up<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">origin  https://github.com/OWNER/REPOSITORY.git (fetch)</span><br><span class="line">origin  https://github.com/OWNER/REPOSITORY.git (push)</span><br></pre></td></tr></table></figure></p>
+<p>Remove them by<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br></pre></td></tr></table></figure></p>
+<p>Verify remote<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p>
+<p>Set the new remote by following step 11</p>
+<p>If you have problems, feel free to comment.</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Github/" rel="tag"># Github</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/20/Uploading big docs onto AWS/" rel="next" title="Uploading big docs onto AWS">
+                <i class="fa fa-chevron-left"></i> Uploading big docs onto AWS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -575,9 +758,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://qifengzhou.github.io/categories/index.html';
-          this.page.identifier = 'categories/index.html';
-          this.page.title = 'categories';
+          this.page.url = 'http://qifengzhou.github.io/2018/04/29/Upload files bigger than 25 MB to Github/';
+          this.page.identifier = '2018/04/29/Upload files bigger than 25 MB to Github/';
+          this.page.title = 'Upload files bigger than 25 MB to Github';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://qifengzhou.disqus.com/embed.js';
